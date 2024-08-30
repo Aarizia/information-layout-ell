@@ -1,0 +1,22 @@
+.header__menu-bottom {
+    padding-block: var(--primary-padding-block);
+    border-block: var(--nuance-border-solid);
+    list-style: none;
+    font-size: var(--nuance-font-size-xsmall);
+    display: flex;
+    justify-content: center;
+    gap: var(--nuance-gap-xxlarge);
+}
+
+.menu-bottom__link {
+    text-decoration: none;
+    font-weight: var(--secondary-font-weight);
+}
+
+.menu__bottom__item {
+    color: var(--color-text-primary);
+}
+
+.menu-bottom__item:last-child {
+    color: var(--primary-color-accent);
+}

@@ -1,0 +1,83 @@
+.frontpage-overview {
+    display: grid;
+    grid-template-rows: 1.6rem 1.2rem auto auto;
+    grid-template-columns: var(--secondary-grid-column);
+    gap: var(--primary-gap);
+}
+
+/* --- frontpage-overview__header --- */
+.frontpage-overview__header {
+    font-size: var(--secondary-font-size);
+    border-block-end: var(--primary-border);
+    grid-column: 1 / 4;
+    justify-self: right;
+    width: 100%;
+}
+
+.frontpage-overview__link {
+    text-decoration: none;
+    text-align: right;
+    color: var(--primary-color-accent);
+}
+
+/* --- frontpage-overview__text-icon-container --- */
+.frontpage-overview__text-icon-container {
+    display: flex;
+    grid-column: 1 / 4;
+    gap: var(--secondary-gap);
+    align-items: center;
+}
+
+.frontpage-overview__icon {
+    height: var(--primary-width);
+    width: var(--primary-width);
+    color: var(--nuance-color-medium);
+}
+
+.frontpage-overview__text {
+    text-decoration: none;
+    display: block;
+    font-size: var(--nuance-font-size-xsmall);
+    font-weight: var(--nuance-font-weight-extra-bold);
+}
+
+/* --- frontpage-overview__article --- */
+.frontpage-overview__article {
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: 0.6rem auto 1fr;
+    grid-row-gap: var(--nuance-gap-xxsmall);
+}
+
+.free-article__middle-element {
+    grid-row: 2 / 3;
+}
+
+.free-article__last-element {
+    grid-row: 3 / 4;
+}
+
+.frontpage-overview__image {
+    width: 100%;
+}
+
+.frontpage-overview__subscription {
+    text-transform: uppercase;
+    font-weight: var(--secondary-font-weight);
+    font-size: var(--secondary-font-size);
+    color: var(--primary-color-accent);
+}
+
+.frontpage-overview__heading {
+    font-size: var(--nuance-font-size-medium);
+    font-weight: var(--secondary-font-weight);
+    font-family: var(--secondary-font-family);
+}
+
+.frontpage-overview__article-text {
+    color: var(--nuance-color-medium);
+    font-size: var(--nuance-font-size-xsmall);
+    line-height: var(--secondary-line-height);
+    font-family: var(--secondary-font-family);
+}

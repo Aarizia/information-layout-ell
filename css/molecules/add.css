@@ -1,0 +1,17 @@
+.add {
+    display: flex;
+}
+
+.add__image {
+    width: 38.5rem;
+    height: 8rem;
+    object-fit: cover;
+}
+
+.add__text {
+    text-align: center;
+    writing-mode: vertical-rl;
+    color: var(--nuance-color-medium);
+    font-size: var(--secondary-font-size);
+    font-weight: var(--nuance-font-weight-semi-bold);
+}

@@ -1,0 +1,35 @@
+/* --- header --- */
+.header {
+    box-shadow: var(--nuance-box-shadow-light);
+}
+
+/* --- main --- */
+.main {
+    width: 50%;
+    margin-inline: auto;
+    margin-block: var(--primary-margin-block);
+}
+
+/* --- article-text --- */
+.article-text {
+    display: grid;
+    padding-block-start: var(--secondary-padding-block-start);
+    grid-template-columns: var(--primary-grid-column);
+    grid-column-gap: var(--primary-gap);
+}
+
+/* --- more-articles --- */
+.more-articles {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: var(--primary-grid-column);
+    grid-column-gap: var(--primary-gap);
+}
+
+/* --- foooter --- */
+.footer {
+    text-align: center;
+    background-color: var(--secondary-color-background);
+    border-block-start: var(--nuance-border-dotted);
+    padding-block-end: var(--nuance-padding-block-end-large);
+}

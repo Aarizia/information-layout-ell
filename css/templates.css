@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+}
+
+.wrapper {
+    font-family: var(--primary-font-family);
+    color: var(--primary-color-text);
+    background-color: var(--primary-color-background);
+    width: 50%vw;
+    margin: var(--primary-margin-center);
+}
+
+/* --- utility classes --- */
+.line-break {
+    display: block;
+}
+
+.small-font {
+    font-size: var(--nuance-font-size-xxsmall);
+}
+
+.small-padding-top {
+    padding-block-start: var(--primary-padding-block-start);
+}

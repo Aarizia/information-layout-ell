@@ -1,0 +1,60 @@
+/* ----- header__bar-top ----- */
+.header__bar-top {
+    padding-block: var(--nuance-padding-block-medium);
+    text-transform: uppercase;
+    font-weight: var(--secondary-font-weight);
+    display: grid;
+    grid-template-columns: var(--secondary-grid-column);
+}
+
+.header__icon {
+    height: var(--nuance-height-xsmall);
+    width: var(--primary-width);
+}
+
+/* --- header__menu-and-search ---*/
+.header__menu-and-search {
+    display: flex;
+    gap: var(--nuance-gap-xxlarge);
+    align-items: center;
+    align-self: end;
+    padding-inline-start: var(--nuance-padding-inline-start-medium);
+}
+
+.header__menu-left {
+    text-decoration: none;
+    font-size: var(--secondary-font-size);
+    display: flex;
+    gap: var(--primary-gap);
+    align-items: center;
+}
+
+.header__search-icon {
+    height: var(--nuance-height-small);
+    cursor: pointer;
+}
+
+/* --- heading/logo --- */
+.header__heading {
+    font-family: var(--secondary-font-family);
+    font-size: var(--nuance-font-size-xlarge);
+    font-weight: var(--nuance-font-weight-black);
+    text-transform: none;
+    color: transparent;
+    background-image: url(https://picsum.photos/600/100);
+    background-repeat: no-repeat;
+    background-size: auto;
+    cursor: pointer;
+}
+
+/* --- header__login --- */
+.header__login {
+    text-decoration: none;
+    padding-inline-end: var(--nuance-padding-inline-end);
+    font-size: var(--secondary-font-size);
+    display: flex;
+    align-items: center;
+    gap: var(--primary-gap);
+    justify-self: end;
+    align-self: end;
+}

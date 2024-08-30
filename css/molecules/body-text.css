@@ -1,0 +1,95 @@
+.body-text {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.75rem 1fr;
+    grid-column-gap: var(--primary-gap);
+    position: relative;
+}
+
+.body-text::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, var(--primary-color-background), transparent);
+    position: absolute;
+    top: 0;
+}
+
+/* --- body-text__header --- */
+.body-text__header {
+    font-size: var(--nuance-font-size-xsmall);
+    font-weight: var(--secondary-font-weight);
+    border-block-end: var(--primary-border);
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1 / 3;
+}
+
+.body-text__date, .body-text__comments {
+    display: flex;
+    gap: var(--nuance-gap-xxsmall);
+    align-items: center;
+}
+
+.body-text__comments {
+    cursor: pointer;
+}
+
+.body-text__icon {
+    width: var(--primary-width);
+    color: var(--nuance-color-medium);
+}
+
+/* --- body-text__text --- */
+.body-text__text {
+    font-size: var(--primary-font-size);
+    line-height: var(--nuance-line-height);
+    padding-block-start: var(--secondary-padding-block-start);
+    font-family: var(--secondary-font-family);
+}
+
+/* --- body-text__social-media --- */
+.body-text__social-media {
+    padding-block-start: var(--secondary-padding-block-start);
+    display: flex;
+    gap: var(--nuance-gap-xxxsmall);
+}
+
+.social-media__link {
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    width: var(--nuance-width-large);
+    height: var(--primary-height);
+    color: var(--primary-color-background);
+    background-color: var(--brand-color-dark);
+    border-radius: var(--nuance-border-radius-small);
+    display: flex;
+    gap: var(--secondary-gap);
+}
+
+.social-media__icon {
+    width: var(--primary-width);
+    height: var(--primary-width);
+}
+
+.social-media__icon-container {
+    padding-inline-start: var(--nuance-padding-inline-start-small);
+}
+
+.social-media__twitter {
+    background-color: var(--brand-color-light);
+}
+
+.social-media__email {
+    background-color: var(--nuance-color-medium);
+}
+
+.social-media__command {
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: var(--secondary-font-size);
+    font-weight: var(--nuance-font-weight-semi-bold);
+}
